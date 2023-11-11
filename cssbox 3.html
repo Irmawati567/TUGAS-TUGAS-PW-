@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box 3</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        
+        .row1-brown {
+            background-color: brown;
+            flex-grow: 1;
+            height: 70px;
+            border: solid 1px black;
+        }
+        
+        .row1-orange {
+            background-color: orange;
+            flex-grow: 9;
+            height: 70px;
+            border: solid 1px black;
+        }
+
+        .row2 {
+            display: flex; 
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .row2-green {
+            background-color: rgb(161, 219, 161);
+            flex-grow: 1.13;
+            height: 400px;
+            border: solid 1px black;
+        }
+        
+        .row2-lightgray {
+            background-color: lightgray;
+            flex-grow: 7;
+            height: 400px;
+            border: solid 1px black;
+        }
+        
+        .row2-black {
+            background-color: black (113, 206, 236);
+            flex-grow: 0.87;
+            height: 400px;
+            border: solid 1px black;
+        }
+
+        .row3 {
+            background-color: burlywood;
+            gap: 10px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="row1-brown">Kotak Coklat</div>
+            <div class="row1-orange">Kotak Orange</div>
+        </div>
+        
+        <div class="row2">
+            <div class="row2-green">Kotak Hijau</div>
+            <div class="row2-lightgray">Kotak Abu-abu</div>
+            <div class="row2-black">Kotak hitam</div>
+        </div>
+        
+        <div class="row3">burlywood</div>
+    </div>
+</body>
+</html>
