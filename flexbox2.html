@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oke</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            display: flex;
+            min-height: 100vh;
+        }
+        div {
+            flex: 2;
+        }
+        nav {
+            flex: 0.3;
+            flex-direction: row;
+            padding: 10px;
+            background-color: rgb(17, 107, 107);
+        }
+        header {
+            padding: 20px;
+            flex: 1;
+            min-height: 8vh;
+            background-color: rgb(6, 249, 168);
+        }
+        .content {
+            display: flex;
+            min-height: 70.3vh;
+        }
+        article {
+            flex: 2;
+            padding: 10px;
+            background-color: rgb(56, 18, 183);
+        }
+        aside {
+            flex: 0.4;
+            padding: 10px;
+            background-color: rgb(12, 103, 47);
+        }
+        footer {
+            flex: 1;
+            padding: 20px;
+            min-height: 8vh;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>Nav</nav>
+        <div>
+            <header>Header</header>
+        <div class="content">
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+            <footer>Footer</footer>
+        </div>
+    </main>
+</body>
+</html>
