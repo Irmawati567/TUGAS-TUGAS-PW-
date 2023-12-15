@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        input {
+            width: 50%;
+            padding: 10px;
+            font-size: 20px; 
+        }
+        label {
+            font-size: 30px;
+        }
+        #jumlah {
+            width: 50%;
+            padding: 20px;
+            border: 1px solid black; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <input type="number" name="bilangan1" id="bilangan1" onchange="hitungJumlahBilangan()"/>
+    <br/> 
+    <br/>
+    <label for="tambah">+</label>
+    <br/>
+    <br/>
+    <input type="number" name="bilangan2" id="bilangan2" onchange="hitungJumlahBilangan()"/>
+    <br/>
+    <br/>
+    <label for="samadengan">=</label>
+    <br/>
+    <br/>
+    <div class="jumlah" id="jumlah">
+    </div>
+    <script>
+        function hitungJumlahBilangan () {
+      
+        let bilangan1 = parseInt(document.getElementById("bilangan1").value);
+        let bilangan2 = parseInt(document.getElementById("bilangan2").value);
+        let jumlahbilangan = (bilangan1 + bilangan2);
+        
+        
+        document.getElementById("jumlah").innerText = jumlahbilangan;
+        }
+    </script>
+</body>
+</html>
